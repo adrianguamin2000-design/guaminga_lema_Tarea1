@@ -1,0 +1,154 @@
+
+.bio {
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkgreen;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+}
+
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+}
+
+.caja {
+    width: 300px;
+    height: 200px;
+    background-color: orange;
+    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px auto;
+    font-weight: bold;
+}
+.caja:hover {
+    background-color: red;
+    transition: 0.5s;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: lightcoral;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+}
+
+img {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.8);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#modal img {
+    width: 300px;
+}
+
+/* CONTENEDOR FLEX */
+.contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+    flex: 3;
+    background: white;
+    padding: 15px;
+}
+
+/* BARRA LATERAL */
+.sidebar {
+    flex: 1;
+    background: lightgray;
+    padding: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

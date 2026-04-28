@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <h1>Galería de Imágenes</h1>
+
+    <!-- IMÁGENES -->
+   <img src="imagenes/futbol.jpg" onclick="abrirImagen(this)">
+   <img src="imagenes/musica.jpg" onclick="abrirImagen(this)">
+   <img src="imagenes/programacion.jpg" onclick="abrirImagen(this)">
+
+    <!-- VENTANA EMERGENTE -->
+    <div id="modal" onclick="cerrarImagen()">
+        <img id="imgGrande">
+    </div>
+
+    <script>
+        function abrirImagen(img) {
+            document.getElementById("modal").style.display = "flex";
+            document.getElementById("imgGrande").src = img.src;
+        }
+
+        function cerrarImagen() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+
+</body>
+<a href="index.html">Volver</a>
+</html>
